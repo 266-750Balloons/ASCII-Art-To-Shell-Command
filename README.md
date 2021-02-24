@@ -20,7 +20,14 @@ The longer story:
 I used the .replaceAll function to escape characters that meant things to each command environment. I learned the escaping for each command interface. The hardest to write for was the Windows Command Prompt due to there being so many characters that needed to be escaped. Also, I had to chain echo commands with && to get multiple lines. Linux support was just a little annoying because I had to do some command chaining whenever there was an exclamation point in the art so that the shell didn't think it was referring to an event (Some shells support escaping the exclamation point, but in Ubuntu, that causes issues, mainly the back slash showing).
 
 ## In action
+![ASCII to Shell Command Output Command Being Ran in WSL Ubuntu Linux](/readmeIMG/linux.png)
+Running the output command in Linux in WSL. (Note: I am not still running Windows 7. I am just using openshell with a taskbar skin to alleviate my pain from its passing.)
 
+![ASCII to Shell Command Output Command Being Ran in the Windows Command Prompt](/readmeIMG/linux.png)
+Running the output command in the Windows Command Prompt (with my retro Windows Terminal Theme).
+
+![ASCII to Shell Command Output Command Being Ran in Powershell](/readmeIMG/powershell.png)
+Running the output command in Windows Powershell.
 
 ## Limitations
 * It seems that iOS devices are unable to have js change their favicon.
