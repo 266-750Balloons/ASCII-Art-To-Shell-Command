@@ -34,3 +34,4 @@ I used the .replaceAll function to escape characters that meant things to each c
 * MDN: [Mozilla Developer Documentation](https://developer.mozilla.org/en-US/)
 * [W3 Schools Documentation](https://www.w3schools.com/)
 * snaptortise: [konami-js](https://github.com/snaptortoise/konami-js), Copyright (c) 2017 Snaptortoise [(See MIT License)](https://github.com/snaptortoise/konami-js/blob/master/LICENSE.md)
+* [ASCII Art Archive](https://www.asciiart.eu/computers/computers): Provided a whole ton of ASCII art to test.
