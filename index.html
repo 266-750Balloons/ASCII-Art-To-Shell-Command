@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Art to Shell Command</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body class="crt">
+    <img id="overlay" src="Ibm_pcjr_with_display.png">
+    <div id="main">
+        <div id="copyalert">Command Copied to Clipboard</div>
+        <div id="head" role="img" aria-label="ASCII 2 CMD">                               ______      ______       ______     ______     ______        ______              ______       __     __        _____
+  ______   _  _       _       /%%%%%%|    /%%%%%%|     /%%%%%%|   /%%%%%%|   /%%%%%%|      /%%%%%%\            /%%%%%%|     /%%|   /%%|      /%%%%%%\
+ / _____| |_| \ \    \ \     /%     %|   /%/          /%/           |%%|       |%%|        |%/  /%/           /%/          /%/%|  /%/%|     /%    \%%%\
+| |            \ \    \ \   /%%%%%% %|  /%%%%%%%%|   /%/            |%%|       |%%|            /%/           /%/          /%/|%| /%/|%|    /%      |%%%|
+| |_____   _    \ \   / /  /%/     |%|  _______/%|  /%/          ___|%%|_   ___|%%|_         /%%/___        /%/          /%/ |%|/%/ |%|   /%      /%%%/
+|_______| |_|    \ \ /_/  /%/      |%| |%%%%%&%%%| /%%%%%%%%%%| /%%%%%%%%| /%%%%%%%%|      /%%%%%%%%|      /%%%%%%%%%%| /%/  |%%%/  |%|  /%%%%%%%%%/
+        </div>
+        <!--
+            Backup of above in case vs code messes up formatting
+            <div id="head">                               ______      ______       ______     ______     ______        ______              ______       __     __        _____
+  ______   _  _       _       /%%%%%%|    /%%%%%%|     /%%%%%%|   /%%%%%%|   /%%%%%%|      /%%%%%%\            /%%%%%%|     /%%|   /%%|      /%%%%%%\
+ / _____| |_| \ \    \ \     /%     %|   /%/          /%/           |%%|       |%%|        |%/  /%/           /%/          /%/%|  /%/%|     /%    \%%%\
+| |            \ \    \ \   /%%%%%% %|  /%%%%%%%%|   /%/            |%%|       |%%|            /%/           /%/          /%/|%| /%/|%|    /%      |%%%|
+| |_____   _    \ \   / /  /%/     |%|  _______/%|  /%/          ___|%%|_   ___|%%|_         /%%/___        /%/          /%/ |%|/%/ |%|   /%      /%%%/
+|_______| |_|    \ \ /_/  /%/      |%| |%%%%%&%%%| /%%%%%%%%%%| /%%%%%%%%| /%%%%%%%%|      /%%%%%%%%|      /%%%%%%%%%%| /%/  |%%%/  |%|  /%%%%%%%%%/
+        </div>
+        -->
+        <span style="display: block;">Paste Art in Here</span>
+        <textarea id="asciiInput" class="focus" spellcheck="false"></textarea><br>
+        <form>
+            <label for="shell"> Shell Type</label>
+            <select name="shell" id="shell" class="focus">
+                <option value="powershell">Powershell</option>
+                <option value="cmd">Windows Command Prompt</option>
+                <option value="bash">Bash (Linux Terminal)</option>
+            </select>
+        </form>
+        <button id="convert" class="focus">Convert</button>
+            <div id="nlContainer">
+            <div id="nlCheck" role="checkbox" aria-label="checkbox">X</div>
+            <div id="nlLabel">Insert Newline at Beginning of Command</div>
+        </div>
+        <div style="margin-top: 10px;">Output</div>
+        <button id="copy" class="focus">Copy</button>
+        <textarea id="out" rows="8" readonly> </textarea>
+        <h3>Credits</h3>
+        <ul id="credits">
+            <li>Alec Lownes: <a href="http://aleclownes.com/2017/02/01/crt-display.html" target="_blank">Using CSS To
+                    Create A CRT</a></li>
+            <li>SS64.com: <a href="https://ss64.com/nt/syntax-esc.html" target="_blank">How-to: Escape Characters,
+                    Delimiters and Quotes at the Windows command line.</a></li>
+            <li>MDN: <a href="https://developer.mozilla.org/en-US/" target="_blank">Mozilla Developer Documentation</a>
+            </li>
+            <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools Documentation</a></li>
+            <li style="display: none;" id="hiddenCredit">Rick Astley: A very good <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="blank">song.</a></li>
+            <li>snaptortise: <a href="https://github.com/snaptortoise/konami-js" target="_blank">konami-js</a>, Copyright (c) 2017 Snaptortoise <a href="https://github.com/snaptortoise/konami-js/blob/master/LICENSE.md" target="_blank">(See MIT License)</a></li>
+            <li>TecMint: <a href="https://www.tecmint.com/echo-command-in-linux/">15 Practical Examples of 'echo' command in Linux</a></li>
+            <li>Rik Myslewski/Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/File:Ibm_pcjr_with_display.jpg">IBM PCjr with original display and "chiclet" keyboard</a>, which I edited to make the CRT bezel frame.</li>
+        </ul>
+        <script src="index.js"></script>
+</body>
+
+</html>
