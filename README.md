@@ -30,7 +30,7 @@ Running the output command in the Windows Command Prompt (with my retro Windows 
 Running the output command in Windows Powershell.
 
 ## Limitations
-* It seems that iOS devices are unable to have js change their favicon.
+* ~~It seems that iOS devices are unable to have js change their favicon.~~ Seems to only be a problem when hosting with Apache2. Probably an issue with server configuration.
 * MacOS compatibility is unknown, as I neither own a Mac or know a friend who has one and is tech savy enough to test it on their Mac.
   * To fix, make a pull request or confirm that the Bash mode works in Mac shell (make sure to list Mac OS version and what shell you are using.).
 * Some styling does not work outsideb Webkit browsers (E.G custom scrollbars, dropdown option styling).
