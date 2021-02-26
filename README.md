@@ -23,7 +23,7 @@ I used the .replaceAll function to escape characters that meant things to each c
 ![ASCII to Shell Command Output Command Being Ran in WSL Ubuntu Linux](/readmeIMG/linux.png)
 Running the output command in Linux in WSL. (Note: I am not still running Windows 7. I am just using openshell with a taskbar skin to alleviate my pain from its passing.)
 
-![ASCII to Shell Command Output Command Being Ran in the Windows Command Prompt](/readmeIMG/linux.png)
+![ASCII to Shell Command Output Command Being Ran in the Windows Command Prompt](/readmeIMG/cmd.png)
 Running the output command in the Windows Command Prompt (with my retro Windows Terminal Theme).
 
 ![ASCII to Shell Command Output Command Being Ran in Powershell](/readmeIMG/powershell.png)
