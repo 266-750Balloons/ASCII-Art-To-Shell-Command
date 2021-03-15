@@ -7,8 +7,6 @@ var convert = document.getElementById("convert");
 var shellType = document.getElementById("shell");
 var copy = document.getElementById("copy");
 var copyalert = document.getElementById("copyalert");
-var overlay = document.getElementById("overlay");
-var docHead = document.getElementById("head");
 var hiddenCredit = document.getElementById("hiddenCredit");
 var nlCheck = document.getElementById("nlCheck");
 
