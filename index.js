@@ -94,10 +94,17 @@ var unixCheck = function () {
     return unix;
 };
 
+var winCheck = function() {
+    var windows = /Windows NT/.test(navigator.userAgent);
+    return windows;
+}
+
 //If the client is on a Unix-like OS, the favicon is changed to a unix shell prompt icon and sets the shell dropdown value to bash. Favicon changing with js does not work on iOS/iPadOS.
 if (unixCheck() == true) {
     document.getElementsByTagName("link")[0].href = "favicon_unix.png";
     shellType.value = "bash";
+} else if (winCheck() == true) {
+    shellType.value = "cmd";
 }
 /*Code from konami-js below. Copyright (c) 2017 Snaptortoise
 MIT License
